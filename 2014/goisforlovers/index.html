@@ -10,9 +10,9 @@
   
   
   
-  <link rel="prev" href="https://moyulao.github.io/2014/hugoisforlovers/" />
-  <link rel="next" href="https://moyulao.github.io/2014/migrate-from-jekyll/" />
-  <link rel="canonical" href="https://moyulao.github.io/2014/goisforlovers/" />
+  <link rel="prev" href="https://wangweihong.github.io/2014/hugoisforlovers/" />
+  <link rel="next" href="https://wangweihong.github.io/2014/migrate-from-jekyll/" />
+  <link rel="canonical" href="https://wangweihong.github.io/2014/goisforlovers/" />
   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -46,18 +46,18 @@ This document is a brief primer on using Go templates."/>
   "headline": "(Hu)go Template Primer",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https:\/\/moyulao.github.io\/2014\/goisforlovers\/"
+    "@id": "https:\/\/wangweihong.github.io\/2014\/goisforlovers\/"
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https:\/\/moyulao.github.io\/cover.png",
+    "url": "https:\/\/wangweihong.github.io\/cover.png",
     "width":  800 ,
     "height":  600 
   },
   "genre": "posts",
   "keywords": "go, golang, templates, themes, development",
   "wordcount":  1487 ,
-  "url": "https:\/\/moyulao.github.io\/2014\/goisforlovers\/",
+  "url": "https:\/\/wangweihong.github.io\/2014\/goisforlovers\/",
   "datePublished": "2014-04-02T00:00:00\u002b00:00",
   "dateModified": "2014-04-02T00:00:00\u002b00:00",
   
@@ -66,7 +66,7 @@ This document is a brief primer on using Go templates."/>
     "name": "Fastbyte01",
     "logo": {
       "@type": "ImageObject",
-      "url": "https:\/\/moyulao.github.io\/logo.png",
+      "url": "https:\/\/wangweihong.github.io\/logo.png",
       "width":  127 ,
       "height":  40 
     }
@@ -89,7 +89,7 @@ This document is a brief primer on using Go templates."/>
         <nav class="navbar">
     <div class="container">
         <div class="navbar-header header-logo">
-        	<a href="https://moyulao.github.io">摸鱼佬</a>
+        	<a href="https://wangweihong.github.io">摸鱼佬</a>
         </div>
         <div class="menu navbar-right">
                 
@@ -107,7 +107,7 @@ This document is a brief primer on using Go templates."/>
 <nav class="navbar-mobile" id="nav-mobile" style="display: none">
      <div class="container">
         <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="https://moyulao.github.io">摸鱼佬</a></div>
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="https://wangweihong.github.io">摸鱼佬</a></div>
             <div class="menu-toggle">
                 <span></span><span></span><span></span>
             </div>
@@ -133,15 +133,15 @@ This document is a brief primer on using Go templates."/>
     <header class="post-header">
         <h1 class="post-title">(Hu)go Template Primer</h1>
         <div class="post-meta">
-            Written by <a href="https://moyulao.github.io" rel="author">map[name:Hugo Authors]</a> with ♥ 
+            Written by <a href="https://wangweihong.github.io" rel="author">map[name:Hugo Authors]</a> with ♥ 
                 <span class="post-time">
                     on <time datetime=2014-04-02 >2 April 2014</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://moyulao.github.io/categories/development/"> Development </a>
-                        <a href="https://moyulao.github.io/categories/golang/"> golang </a>
+                        <a href="https://wangweihong.github.io/categories/development/"> Development </a>
+                        <a href="https://wangweihong.github.io/categories/golang/"> golang </a>
                         
                 </span>
                 <i class="iconfont icon-timer"></i>
@@ -350,11 +350,11 @@ doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front m
 of some pages to turn off the TOC from being displayed.</p>
 <p>Here is the example front matter:</p>
 <pre tabindex="0"><code>---
-title: &quot;Permalinks&quot;
-date: &quot;2013-11-18&quot;
+title: &#34;Permalinks&#34;
+date: &#34;2013-11-18&#34;
 aliases:
-  - &quot;/doc/permalinks/&quot;
-groups: [&quot;extras&quot;]
+  - &#34;/doc/permalinks/&#34;
+groups: [&#34;extras&#34;]
 groups_weight: 30
 notoc: true
 ---
@@ -369,32 +369,32 @@ notoc: true
 <p>In your top-level configuration file (eg, <code>config.yaml</code>) you can define site
 parameters, which are values which will be available to you in chrome.</p>
 <p>For instance, you might declare:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">params</span>:
-  <span style="color:#f92672">CopyrightHTML</span>: <span style="color:#e6db74">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
-  <span style="color:#f92672">TwitterUser</span>: <span style="color:#e6db74">&#34;spf13&#34;</span>
-  <span style="color:#f92672">SidebarRecentLimit</span>: <span style="color:#ae81ff">5</span>
-</code></pre></div><p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">CopyrightHTML</span>: <span style="color:#e6db74">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TwitterUser</span>: <span style="color:#e6db74">&#34;spf13&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">SidebarRecentLimit</span>: <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
 provided if the <code>CopyrightHTML</code> parameter is provided, and if it is given,
 you would declare it to be HTML-safe, so that the HTML entity is not escaped
 again.  This would let you easily update just your top-level config file each
 January 1st, instead of hunting through your templates.</p>
 <pre tabindex="0"><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
-&lt;div class=&quot;text-center&quot;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
+&lt;div class=&#34;text-center&#34;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
 &lt;/footer&gt;{{end}}
 </code></pre><p>An alternative way of writing the &ldquo;if&rdquo; and then referencing the same value
 is to use &ldquo;with&rdquo; instead. With rebinds the context <code>.</code> within its scope,
 and skips the block if the variable is absent:</p>
-<pre tabindex="0"><code>{{with .Site.Params.TwitterUser}}&lt;span class=&quot;twitter&quot;&gt;
-&lt;a href=&quot;https://twitter.com/{{.}}&quot; rel=&quot;author&quot;&gt;
-&lt;img src=&quot;/images/twitter.png&quot; width=&quot;48&quot; height=&quot;48&quot; title=&quot;Twitter: {{.}}&quot;
- alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+<pre tabindex="0"><code>{{with .Site.Params.TwitterUser}}&lt;span class=&#34;twitter&#34;&gt;
+&lt;a href=&#34;https://twitter.com/{{.}}&#34; rel=&#34;author&#34;&gt;
+&lt;img src=&#34;/images/twitter.png&#34; width=&#34;48&#34; height=&#34;48&#34; title=&#34;Twitter: {{.}}&#34;
+ alt=&#34;Twitter&#34;&gt;&lt;/a&gt;
 &lt;/span&gt;{{end}}
 </code></pre><p>Finally, if you want to pull &ldquo;magic constants&rdquo; out of your layouts, you can do
 so, such as in this example:</p>
-<pre tabindex="0"><code>&lt;nav class=&quot;recent&quot;&gt;
+<pre tabindex="0"><code>&lt;nav class=&#34;recent&#34;&gt;
   &lt;h1&gt;Recent Posts&lt;/h1&gt;
   &lt;ul&gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
-    &lt;li&gt;&lt;a href=&quot;{{.RelPermalink}}&quot;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;{{.RelPermalink}}&#34;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
@@ -419,13 +419,13 @@ so, such as in this example:</p>
                 <span>
 
       
-        <a href="//twitter.com/share?url=https%3a%2f%2fmoyulao.github.io%2f2014%2fgoisforlovers%2f&amp;text=%28Hu%29go%20Template%20Primer&amp;via=xxxx" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fwangweihong.github.io%2f2014%2fgoisforlovers%2f&amp;text=%28Hu%29go%20Template%20Primer&amp;via=xxxx" target="_blank" title="Share on Twitter">
           <i class="iconfont icon-twitter"></i>
         </a>
         
       
       
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmoyulao.github.io%2f2014%2fgoisforlovers%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwangweihong.github.io%2f2014%2fgoisforlovers%2f" target="_blank" title="Share on Facebook">
           <i class="iconfont icon-facebook"></i>
         </a>
         
@@ -433,7 +433,7 @@ so, such as in this example:</p>
       
       
       
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmoyulao.github.io%2f2014%2fgoisforlovers%2f&amp;title=%28Hu%29go%20Template%20Primer" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwangweihong.github.io%2f2014%2fgoisforlovers%2f&amp;title=%28Hu%29go%20Template%20Primer" target="_blank" title="Share on LinkedIn">
           <i class="iconfont icon-linkedin"></i>
         </a>
         
@@ -469,35 +469,35 @@ so, such as in this example:</p>
             <section>
             <i class="iconfont icon-icon-tag"></i>Tag: 
             
-            <span class="tag"><a href="https://moyulao.github.io/tags/go/">
+            <span class="tag"><a href="https://wangweihong.github.io/tags/go/">
                     #go</a></span>
             
-            <span class="tag"><a href="https://moyulao.github.io/tags/golang/">
+            <span class="tag"><a href="https://wangweihong.github.io/tags/golang/">
                     #golang</a></span>
             
-            <span class="tag"><a href="https://moyulao.github.io/tags/templates/">
+            <span class="tag"><a href="https://wangweihong.github.io/tags/templates/">
                     #templates</a></span>
             
-            <span class="tag"><a href="https://moyulao.github.io/tags/themes/">
+            <span class="tag"><a href="https://wangweihong.github.io/tags/themes/">
                     #themes</a></span>
             
-            <span class="tag"><a href="https://moyulao.github.io/tags/development/">
+            <span class="tag"><a href="https://wangweihong.github.io/tags/development/">
                     #development</a></span>
             
             </section>
         
         <section>
                 <a href="javascript:window.history.back();">Back</a></span> · 
-                <span><a href="https://moyulao.github.io">Home</a></span>
+                <span><a href="https://wangweihong.github.io">Home</a></span>
         </section>
     </div>
 
     <div class="post-nav">
         
-        <a href="https://moyulao.github.io/2014/hugoisforlovers/" class="prev" rel="prev" title="Getting Started with Hugo"><i class="iconfont icon-dajiantou"></i>&nbsp;Getting Started with Hugo</a>
+        <a href="https://wangweihong.github.io/2014/hugoisforlovers/" class="prev" rel="prev" title="Getting Started with Hugo"><i class="iconfont icon-dajiantou"></i>&nbsp;Getting Started with Hugo</a>
          
         
-        <a href="https://moyulao.github.io/2014/migrate-from-jekyll/" class="next" rel="next" title="Migrate to Hugo from Jekyll">Migrate to Hugo from Jekyll&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        <a href="https://wangweihong.github.io/2014/migrate-from-jekyll/" class="next" rel="next" title="Migrate to Hugo from Jekyll">Migrate to Hugo from Jekyll&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
         
     </div>
 
@@ -533,7 +533,7 @@ so, such as in this example:</p>
         <span itemprop="copyrightYear">2012 - 2023</span>
         
          
-            <span class="author" itemprop="copyrightHolder"><a href="https://moyulao.github.io">摸鱼佬</a> | </span>
+            <span class="author" itemprop="copyrightHolder"><a href="https://wangweihong.github.io">摸鱼佬</a> | </span>
          
 
 		  <span>Crafted with ❤️ by <a href="https://github.com/Fastbyte01/KeepIt" target="_blank" rel="external nofollow noopener noreffer">KeepIt</a> & <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a></span>

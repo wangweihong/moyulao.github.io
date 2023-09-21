@@ -11,8 +11,8 @@
   
   
   
-  <link rel="next" href="https://moyulao.github.io/2014/hugoisforlovers/" />
-  <link rel="canonical" href="https://moyulao.github.io/2014/goisforlovers.fr/" />
+  <link rel="next" href="https://wangweihong.github.io/2014/hugoisforlovers/" />
+  <link rel="canonical" href="https://wangweihong.github.io/2014/goisforlovers.fr/" />
   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -46,18 +46,18 @@ Ce document est une introduction sur l&rsquo;utilisation de Go templates."/>
   "headline": "Introduction aux modèles (Hu)go",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https:\/\/moyulao.github.io\/2014\/goisforlovers.fr\/"
+    "@id": "https:\/\/wangweihong.github.io\/2014\/goisforlovers.fr\/"
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https:\/\/moyulao.github.io\/cover.png",
+    "url": "https:\/\/wangweihong.github.io\/cover.png",
     "width":  800 ,
     "height":  600 
   },
   "genre": "posts",
   
   "wordcount":  1508 ,
-  "url": "https:\/\/moyulao.github.io\/2014\/goisforlovers.fr\/",
+  "url": "https:\/\/wangweihong.github.io\/2014\/goisforlovers.fr\/",
   "datePublished": "2014-04-02T00:00:00\u002b00:00",
   "dateModified": "2014-04-02T00:00:00\u002b00:00",
   
@@ -66,7 +66,7 @@ Ce document est une introduction sur l&rsquo;utilisation de Go templates."/>
     "name": "Fastbyte01",
     "logo": {
       "@type": "ImageObject",
-      "url": "https:\/\/moyulao.github.io\/logo.png",
+      "url": "https:\/\/wangweihong.github.io\/logo.png",
       "width":  127 ,
       "height":  40 
     }
@@ -89,7 +89,7 @@ Ce document est une introduction sur l&rsquo;utilisation de Go templates."/>
         <nav class="navbar">
     <div class="container">
         <div class="navbar-header header-logo">
-        	<a href="https://moyulao.github.io">摸鱼佬</a>
+        	<a href="https://wangweihong.github.io">摸鱼佬</a>
         </div>
         <div class="menu navbar-right">
                 
@@ -107,7 +107,7 @@ Ce document est une introduction sur l&rsquo;utilisation de Go templates."/>
 <nav class="navbar-mobile" id="nav-mobile" style="display: none">
      <div class="container">
         <div class="navbar-header">
-            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="https://moyulao.github.io">摸鱼佬</a></div>
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-sun"></i></a>&nbsp;<a href="https://wangweihong.github.io">摸鱼佬</a></div>
             <div class="menu-toggle">
                 <span></span><span></span><span></span>
             </div>
@@ -133,14 +133,14 @@ Ce document est une introduction sur l&rsquo;utilisation de Go templates."/>
     <header class="post-header">
         <h1 class="post-title">Introduction aux modèles (Hu)go</h1>
         <div class="post-meta">
-            Written by <a href="https://moyulao.github.io" rel="author">map[name:Michael Henderson]</a> with ♥ 
+            Written by <a href="https://wangweihong.github.io" rel="author">map[name:Michael Henderson]</a> with ♥ 
                 <span class="post-time">
                     on <time datetime=2014-04-02 >2 April 2014</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://moyulao.github.io/categories/go/"> Go </a>
+                        <a href="https://wangweihong.github.io/categories/go/"> Go </a>
                         
                 </span>
                 <i class="iconfont icon-timer"></i>
@@ -195,7 +195,7 @@ fonctions.</p>
 <pre><code>{{ .Params.bar }}
 </code></pre>
 <p><strong>Les parenthèses peuvent être utilisées pour grouper des éléments ensemble</strong></p>
-<pre tabindex="0"><code>{{ if or (isset .Params &quot;alt&quot;) (isset .Params &quot;caption&quot;) }} Caption {{ end }}
+<pre tabindex="0"><code>{{ if or (isset .Params &#34;alt&#34;) (isset .Params &#34;caption&#34;) }} Caption {{ end }}
 </code></pre><h2 id="variables">Variables</h2>
 <p>Chaque modèle go a une structure (objet) mis à sa disposition. Avec Hugo, à
 chaque modèle est passé soit une page, soit une structure de nœud, suivant quel
@@ -271,8 +271,8 @@ avec <code>end</code>.</p>
 {{ end }}
 </code></pre>
 <p><strong>Exemple 3: And &amp; Or</strong></p>
-<pre tabindex="0"><code>{{ if and (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;))
-    (isset .Params &quot;attr&quot;)}}
+<pre tabindex="0"><code>{{ if and (or (isset .Params &#34;title&#34;) (isset .Params &#34;caption&#34;))
+    (isset .Params &#34;attr&#34;)}}
 </code></pre><p><strong>Exemple 4: With</strong></p>
 <p>Une manière alternative d&rsquo;écrire un &ldquo;if&rdquo; et de référencer cette même valeur est
 d&rsquo;utiliser &ldquo;with&rdquo;. Cela permet de remplacer le contexte <code>.</code> par cet valeur et
@@ -311,13 +311,13 @@ illustration de la façon d&rsquo;utiliser les tuyaux.</p>
 </code></pre>
 <p>Accès au paramètre de page nommé &ldquo;disqus_url&rdquo; et échappement du HTML</p>
 <p><strong>Exemple 3 :</strong></p>
-<pre tabindex="0"><code>{{ if or (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;))
-    (isset .Params &quot;attr&quot;)}}
+<pre tabindex="0"><code>{{ if or (or (isset .Params &#34;title&#34;) (isset .Params &#34;caption&#34;))
+    (isset .Params &#34;attr&#34;)}}
 Stuff Here
 {{ end }}
 </code></pre><p>Peut être réécrit en</p>
-<pre tabindex="0"><code>{{  isset .Params &quot;caption&quot; | or isset .Params &quot;title&quot; |
-    or isset .Params &quot;attr&quot; | if }}
+<pre tabindex="0"><code>{{  isset .Params &#34;caption&#34; | or isset .Params &#34;title&#34; |
+    or isset .Params &#34;attr&#34; | if }}
 Stuff Here
 {{ end }}
 </code></pre><h2 id="contexte-alias-le-point">Contexte (alias. le point)</h2>
@@ -331,7 +331,7 @@ judicieux d&rsquo;y définir comme variable au lieu de dépendre du contexte.</p
 <p><strong>Exemple:</strong></p>
 <pre tabindex="0"><code>{{ $title := .Site.Title }}
 {{ range .Params.tags }}
-&lt;li&gt; &lt;a href=&quot;{{ $baseurl }}/tags/{{ . | urlize }}&quot;&gt;
+&lt;li&gt; &lt;a href=&#34;{{ $baseurl }}/tags/{{ . | urlize }}&#34;&gt;
     {{ . }}&lt;/a&gt; - {{ $title }} &lt;/li&gt;
 {{ end }}
 </code></pre><p>Notez que, une fois que nous sommes entrés dans la boucle, la valeur de
@@ -354,11 +354,11 @@ dans notre section liminaire de quelques pages pour désactiver la table des
 matières.</p>
 <p>Ceci est un exemple de section liminaire :</p>
 <pre tabindex="0"><code>---
-title: &quot;Permalinks&quot;
-date: &quot;2013-11-18&quot;
+title: &#34;Permalinks&#34;
+date: &#34;2013-11-18&#34;
 aliases:
-  - &quot;/doc/permalinks/&quot;
-groups: [&quot;extras&quot;]
+  - &#34;/doc/permalinks/&#34;
+groups: [&#34;extras&#34;]
 groups_weight: 30
 notoc: true
 ---
@@ -373,31 +373,31 @@ notoc: true
 <p>Dans votre configuration de plus haut niveau (ex <code>config.yaml</code>), vous pouvez
 définir des paramètres de site, dont les valeurs vous seront accessibles.</p>
 <p>Pour les instances, vous pourriez délarer :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">params</span>:
-  <span style="color:#f92672">CopyrightHTML</span>: <span style="color:#e6db74">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
-  <span style="color:#f92672">TwitterUser</span>: <span style="color:#e6db74">&#34;spf13&#34;</span>
-  <span style="color:#f92672">SidebarRecentLimit</span>: <span style="color:#ae81ff">5</span>
-</code></pre></div><p>Avec un pied de page, vous devriez déclarer un <code>&lt;footer&gt;</code> qui est affiché
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">params</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">CopyrightHTML</span>: <span style="color:#e6db74">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TwitterUser</span>: <span style="color:#e6db74">&#34;spf13&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">SidebarRecentLimit</span>: <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><p>Avec un pied de page, vous devriez déclarer un <code>&lt;footer&gt;</code> qui est affiché
 seulement si le paramètre <code>CopyrightHTML</code> est déclaré, et si il l&rsquo;est, vous
 devriez le déclarer comme HTML-safe, afin d&rsquo;éviter d&rsquo;échapper les entités HTML.
 Cela vous permettra de le modifier facilement dans votre configuration au lieu
 de le chercher dans votre modèle.</p>
 <pre tabindex="0"><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
-&lt;div class=&quot;text-center&quot;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
+&lt;div class=&#34;text-center&#34;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
 &lt;/footer&gt;{{end}}
 </code></pre><p>Une alternative au &ldquo;if&rdquo; et d&rsquo;appeler la même valeur est d&rsquo;utiliser &ldquo;with&rdquo;. Cela
 modifiera le contexte et passera le bloc si la variable est absente :</p>
-<pre tabindex="0"><code>{{with .Site.Params.TwitterUser}}&lt;span class=&quot;twitter&quot;&gt;
-&lt;a href=&quot;https://twitter.com/{{.}}&quot; rel=&quot;author&quot;&gt;
-&lt;img src=&quot;/images/twitter.png&quot; width=&quot;48&quot; height=&quot;48&quot; title=&quot;Twitter: {{.}}&quot;
- alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+<pre tabindex="0"><code>{{with .Site.Params.TwitterUser}}&lt;span class=&#34;twitter&#34;&gt;
+&lt;a href=&#34;https://twitter.com/{{.}}&#34; rel=&#34;author&#34;&gt;
+&lt;img src=&#34;/images/twitter.png&#34; width=&#34;48&#34; height=&#34;48&#34; title=&#34;Twitter: {{.}}&#34;
+ alt=&#34;Twitter&#34;&gt;&lt;/a&gt;
 &lt;/span&gt;{{end}}
 </code></pre><p>Enfin, si vous souhaitez extraire des &ldquo;constantes magiques&rdquo; de vos mises en
 page, vous pouvez le faire comme dans l&rsquo;exemple suivant :</p>
-<pre tabindex="0"><code>&lt;nav class=&quot;recent&quot;&gt;
+<pre tabindex="0"><code>&lt;nav class=&#34;recent&#34;&gt;
   &lt;h1&gt;Recent Posts&lt;/h1&gt;
   &lt;ul&gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
-    &lt;li&gt;&lt;a href=&quot;{{.RelPermalink}}&quot;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;{{.RelPermalink}}&#34;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
@@ -422,13 +422,13 @@ page, vous pouvez le faire comme dans l&rsquo;exemple suivant :</p>
                 <span>
 
       
-        <a href="//twitter.com/share?url=https%3a%2f%2fmoyulao.github.io%2f2014%2fgoisforlovers.fr%2f&amp;text=Introduction%20aux%20mod%c3%a8les%20%28Hu%29go&amp;via=xxxx" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fwangweihong.github.io%2f2014%2fgoisforlovers.fr%2f&amp;text=Introduction%20aux%20mod%c3%a8les%20%28Hu%29go&amp;via=xxxx" target="_blank" title="Share on Twitter">
           <i class="iconfont icon-twitter"></i>
         </a>
         
       
       
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmoyulao.github.io%2f2014%2fgoisforlovers.fr%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwangweihong.github.io%2f2014%2fgoisforlovers.fr%2f" target="_blank" title="Share on Facebook">
           <i class="iconfont icon-facebook"></i>
         </a>
         
@@ -436,7 +436,7 @@ page, vous pouvez le faire comme dans l&rsquo;exemple suivant :</p>
       
       
       
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fmoyulao.github.io%2f2014%2fgoisforlovers.fr%2f&amp;title=Introduction%20aux%20mod%c3%a8les%20%28Hu%29go" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwangweihong.github.io%2f2014%2fgoisforlovers.fr%2f&amp;title=Introduction%20aux%20mod%c3%a8les%20%28Hu%29go" target="_blank" title="Share on LinkedIn">
           <i class="iconfont icon-linkedin"></i>
         </a>
         
@@ -471,14 +471,14 @@ page, vous pouvez le faire comme dans l&rsquo;exemple suivant :</p>
         
         <section>
                 <a href="javascript:window.history.back();">Back</a></span> · 
-                <span><a href="https://moyulao.github.io">Home</a></span>
+                <span><a href="https://wangweihong.github.io">Home</a></span>
         </section>
     </div>
 
     <div class="post-nav">
          
         
-        <a href="https://moyulao.github.io/2014/hugoisforlovers/" class="next" rel="next" title="Getting Started with Hugo">Getting Started with Hugo&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
+        <a href="https://wangweihong.github.io/2014/hugoisforlovers/" class="next" rel="next" title="Getting Started with Hugo">Getting Started with Hugo&nbsp;<i class="iconfont icon-xiaojiantou"></i></a>
         
     </div>
 
@@ -514,7 +514,7 @@ page, vous pouvez le faire comme dans l&rsquo;exemple suivant :</p>
         <span itemprop="copyrightYear">2012 - 2023</span>
         
          
-            <span class="author" itemprop="copyrightHolder"><a href="https://moyulao.github.io">摸鱼佬</a> | </span>
+            <span class="author" itemprop="copyrightHolder"><a href="https://wangweihong.github.io">摸鱼佬</a> | </span>
          
 
 		  <span>Crafted with ❤️ by <a href="https://github.com/Fastbyte01/KeepIt" target="_blank" rel="external nofollow noopener noreffer">KeepIt</a> & <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a></span>

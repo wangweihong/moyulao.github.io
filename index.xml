@@ -1,37 +1,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>摸鱼佬 on 摸鱼佬</title>
-    <link>https://moyulao.github.io/</link>
+    <link>https://wangweihong.github.io/</link>
     <description>Recent content in 摸鱼佬 on 摸鱼佬</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://moyulao.github.io/" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wangweihong.github.io/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Helloworld</title>
-      <link>https://moyulao.github.io/helloworld/</link>
+      <link>https://wangweihong.github.io/helloworld/</link>
       <pubDate>Thu, 21 Sep 2023 08:00:38 +0000</pubDate>
       
-      <guid>https://moyulao.github.io/helloworld/</guid>
+      <guid>https://wangweihong.github.io/helloworld/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://moyulao.github.io/posts/</link>
+      <link>https://wangweihong.github.io/posts/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://moyulao.github.io/posts/</guid>
+      <guid>https://wangweihong.github.io/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://moyulao.github.io/about/</link>
+      <link>https://wangweihong.github.io/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://moyulao.github.io/about/</guid>
+      <guid>https://wangweihong.github.io/about/</guid>
       <description>&lt;p&gt;Hugo is the &lt;strong&gt;world’s fastest framework for building websites&lt;/strong&gt;. It is written in Go.&lt;/p&gt;
 &lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
 &lt;ul&gt;
@@ -47,10 +47,10 @@
     
     <item>
       <title>Projects</title>
-      <link>https://moyulao.github.io/projects/</link>
+      <link>https://wangweihong.github.io/projects/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://moyulao.github.io/projects/</guid>
+      <guid>https://wangweihong.github.io/projects/</guid>
       <description></description>
     </item>
     
